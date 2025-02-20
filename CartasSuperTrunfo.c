@@ -13,7 +13,11 @@ int main() {
 
 char cidade[50], codigo[50], estado[50];
 int populacao, pontos_turisticos;
-float PIB, area;
+float PIB, area, densidade_populacional, PIBperCapita;
+
+densidade_populacional = populacao / area;
+PIBperCapita = PIB / populacao;
+
 
 // Início do código para entrada e saída de dados
 
@@ -52,7 +56,10 @@ scanf ("%d\n", &pontos_turisticos);
 
 //Resultado com todas as informações da carta
 
-printf ("Código da cidade: %s\nCidade: %s\nEstado: %s\nPopulacao: %d\nPontos Turisticos: %d\nPIB: %f\nÁrea: %f", codigo, cidade, estado, populacao, area, PIB, pontos_turisticos);
+printf ("Código da cidade: %s\nCidade: %s\nEstado: %s\nPopulacao: %d\nPontos Turisticos: %d\nPIB: %f\nÁrea: %fDensidade populacional:%.2f\nPib per Capita:%.2f\n", codigo, cidade, estado, populacao, area, PIB, pontos_turisticos, densidade_populacional, PIBperCapita);
+
+
+//CARTA 2
 
 
 
@@ -60,7 +67,10 @@ printf ("Código da cidade: %s\nCidade: %s\nEstado: %s\nPopulacao: %d\nPontos Tu
 
 char cidade2[50], codigo2[50], estado2[50];
 int populacao2, pontos_turisticos2;
-float PIB2, area2;
+float PIB2, area2, densidade_populacional2, PIBperCapita2;
+
+densidade_populacional2 = populacao2 / area2;
+PIBperCapita2 = PIB2 / populacao2;
 
 // Início do código para entrada e saída de dados
 
@@ -99,7 +109,9 @@ scanf ("%d\n", &pontos_turisticos2);
 
 //Resultado com todas as informações da carta
 
-printf ("Código da cidade: %s\nCidade: %s\nEstado: %s\nPopulacao: %d\nPontos Turisticos: %d\nPIB: %f\nÁrea: %f", codigo2, cidade2, estado2, populacao2, area2, PIB2, pontos_turisticos2);
+printf ("Código da cidade: %s\nCidade: %s\nEstado: %s\nPopulacao: %d\nPontos Turisticos: %d\nPIB: %f\nÁrea: %f\nDensidade populacional:%.2f\nPib per Capita:%.2f\n", codigo2, cidade2, estado2, populacao2, area2, PIB2, pontos_turisticos2, densidade_populacional2, PIBperCapita2);
 
 return 0;
 }
+
+
