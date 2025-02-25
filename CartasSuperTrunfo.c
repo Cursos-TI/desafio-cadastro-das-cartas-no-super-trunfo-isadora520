@@ -120,25 +120,72 @@ int main() {
 
     //Comparação de cartas
 
-    int resultado_populacao = populacao > populacao2;
-    int resultado_pontos_turisticos = pontos_turisticos > pontos_turisticos2;
-    int resultado_PIB = PIB > PIB2;
-    int resultado_area = area > area2;
-    int resultado_densidade_populacional = densidade_populacional < densidade_populacional2;
-    int resultado_PIBperCapita = PIBperCapita > PIBperCapita2;
-    int resultado_superpoder = superpoder > superpoder2;
+    printf ("Resultado:\n");
 
-    //Saída de dados- comparação das cartas
+    //Atributo população
+    printf ("População carta 1: %lu\n", populacao);
+    printf ("População carta 2: %lu\n", populacao2);
+    if (populacao > populacao2) {
+        printf ("A carta 1 venceu!");
+    }else {
+        printf ("A carta 2 venceu!");
+    }
 
-    printf ("Resultado do jogo:\n");
+    //Atributo área
+    printf ("Área carta 1: %f\n", area);
+    printf ("Área carta 2: %f\n", area2);
+    if (area > area2) {
+        printf ("A carta 1 venceu!");
+    }else {
+        printf ("A carta 2 venceu!");
+    }
 
-    printf ("População: %d\n", resultado_populacao);
-    printf ("Pontos turísticos: %d\n", resultado_pontos_turisticos);
-    printf ("PIB: %d\n", resultado_PIB);
-    printf ("Área: %d\n", resultado_area);
-    printf ("Densidade populacional: %d\n", resultado_densidade_populacional);
-    printf ("PIBperCapita: %d\n", resultado_PIBperCapita);
-    printf ("Super poder: %d\n", resultado_superpoder);
+    //Atributo PIB
+    printf ("PIB carta 1: %f\n", PIB);
+    printf ("PIB carta 2: %f\n", PIB2);
+    if (PIB > PIB2) {
+        printf ("A carta 1 venceu!");
+    }else {
+        printf ("A carta 2 venceu!");
+    }
+
+
+    //Atributo pontos turísticos
+    printf ("Pontos turísticos carta 1: %d\n", pontos_turisticos);
+    printf ("Pontos turísticos carta 2: %d\n", pontos_turisticos2);
+    if (pontos_turisticos > pontos_turisticos2) {
+        printf ("A carta 1 venceu!");
+    }else {
+        printf ("A carta 2 venceu!");
+    } 
+
+    //Atributo densidade populacional
+    printf ("Densidade populacional carta 1: %f\n", densidade_populacional);
+    printf ("Densidade populacional carta 2: %f\n", densidade_populacional2);
+    if (densidade_populacional < densidade_populacional2) {
+        printf ("A carta 1 venceu!");
+    }else {
+        printf ("A carta 2 venceu!");
+    }
+
+    //Atributo PIBperCapita
+    printf ("PIBperCapita carta 1: %f\n", PIBperCapita);
+    printf ("PIBperCapita carta 2: %f\n", PIBperCapita2);
+    if (PIBperCapita > PIBperCapita2) {
+        printf ("A carta 1 venceu!");
+    }else {
+        printf ("A carta 2 venceu!");
+    }
+
+    //Atributo super poder
+    printf ("Super poder carta 1: %lu\n", superpoder);
+    printf ("Super poder carta 2: %lu\n", superpoder2);
+    if (superpoder > superpoder2) {
+        printf ("A carta 1 venceu!");
+    }else {
+        printf ("A carta 2 venceu!");
+    }
+    
 
 
 
