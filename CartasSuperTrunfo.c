@@ -64,11 +64,12 @@ int main() {
     
     //Resultado com todas as informações da carta
 
+
+    printf ("***INFORMAÇÕES DA CARTA 1***\n");
     printf ("Código da cidade: %s\nCidade: %s\nEstado: %s\nPopulacao: %d\nPontos Turisticos: %d\nPIB: %f\nÁrea: %f\nDensidade populacional:%.2f\nPib per Capita:%.2f\nSuper Poder: %f\n", codigo, cidade, estado, populacao, area, PIB, pontos_turisticos, densidade_populacional, PIBperCapita, superpoder);
 
 
     //CARTA 2
-
 
 
     // Definição das variáveis para cada atributo da cidade 
@@ -78,6 +79,10 @@ int main() {
     float PIB2, area2, densidade_populacional2, PIBperCapita2, superpoder2;
     unsigned long int populacao2;
 
+    
+    printf ("Agora vamos cadastrar a segunda carta:\n");
+
+    
     // Início do código para entrada e saída de dados
 
     // Usuário pode inserir o código da cidade
@@ -126,10 +131,14 @@ int main() {
 
     //Resultado com todas as informações da carta
 
+    printf ("***INFORMAÇÕES DA CARTA 2***\n");
+
     printf ("Código da cidade: %s\nCidade: %s\nEstado: %s\nPopulacao: %d\nPontos Turisticos: %d\nPIB: %f\nÁrea: %f\nDensidade populacional:%.2f\nPib per Capita:%.2f\nSuper Poder:%f\n", codigo2, cidade2, estado2, populacao2, area2, PIB2, pontos_turisticos2, densidade_populacional2, PIBperCapita2, superpoder2);
 
 
     //Comparação de cartas
+
+    printf ("Agora vamos comparar os atributos escolhidos e descobrir quem será o vencedor!");
 
     printf ("Escolha o primeiro atributo com o qual você quer competir:");
     printf ("1- População\n 2- Pontos turísticos\n3-PIB\n4- Área\n5- Densidade populacional\n6- Pib per Capita\n7- Super poder\n");
