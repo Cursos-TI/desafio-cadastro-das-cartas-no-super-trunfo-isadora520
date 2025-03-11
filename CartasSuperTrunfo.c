@@ -140,6 +140,8 @@ int main() {
 
     printf ("Agora vamos comparar os atributos escolhidos e descobrir quem será o vencedor!");
 
+    //Menu para escolha do primeiro atributo
+
     printf ("Escolha o primeiro atributo com o qual você quer competir:");
     printf ("1- População\n 2- Pontos turísticos\n3-PIB\n4- Área\n5- Densidade populacional\n6- Pib per Capita\n7- Super poder\n");
     
@@ -156,14 +158,9 @@ int main() {
 
         printf ("População carta 1: %lu\n", populacao);
         printf ("População carta 2: %lu\n", populacao2);
-        if (populacao > populacao2) {
-            printf ("A carta 1 venceu!");
-        }else if (populacao < populacao2) {
-            printf ("A carta 2 venceu!");
-        }else {
-            printf ("Empate!");
-        }
-
+        
+        primeiroAtributo = (populacao > populacao2) ? 1 : 0;
+        
         break;
 
     case 2:
@@ -171,13 +168,9 @@ int main() {
         //Atributo área
         printf ("Área carta 1: %f\n", area);
         printf ("Área carta 2: %f\n", area2);
-        if (area > area2) {
-            printf ("A carta 1 venceu!");
-        }else if (area < area2) {
-            printf ("A carta 2 venceu!");
-        }else {
-            printf ("Empate!");
-        }
+        
+        primeiroAtributo = (area > area2) ? 1 : 0;
+        
         break;
 
     case 3:
@@ -185,13 +178,9 @@ int main() {
         //Atributo PIB
         printf ("PIB carta 1: %f\n", PIB);
         printf ("PIB carta 2: %f\n", PIB2);
-        if (PIB > PIB2) {
-            printf ("A carta 1 venceu!");
-        }else if (PIB < PIB2) {
-            printf ("A carta 2 venceu!");
-        }else {
-            printf ("Empate!");
-        }
+        
+        primeiroAtributo = (PIB > PIB2) ? 1 : 0;
+        
         break;
 
     case 4:
@@ -199,27 +188,17 @@ int main() {
         //Atributo pontos turísticos
         printf ("Pontos turísticos carta 1: %d\n", pontos_turisticos);
         printf ("Pontos turísticos carta 2: %d\n", pontos_turisticos2);
-        if (pontos_turisticos > pontos_turisticos2) {
-            printf ("A carta 1 venceu!");
-        }else if (pontos_turisticos < pontos_turisticos2) {
-            printf ("A carta 2 venceu!");
-        }else {
-            printf ("Empate!");
-        }
-        break;
+        
+        primeiroAtributo = (pontos_turisticos > pontos_turisticos2) ? 1 : 0;
 
     case 5:
     
         //Atributo densidade populacional
         printf ("Densidade populacional carta 1: %f\n", densidade_populacional);
         printf ("Densidade populacional carta 2: %f\n", densidade_populacional2);
-        if (densidade_populacional < densidade_populacional2) {
-            printf ("A carta 1 venceu!");
-        }else if (densidade_populacional > densidade_populacional2) {
-            printf ("A carta 2 venceu!");
-        }else {
-            printf ("Empate!");
-        }
+        
+        primeiroAtributo = (densidade_populacional < densidade_populacional2) ? 1 : 0;
+        
         break;
 
     case 6:
@@ -227,13 +206,9 @@ int main() {
         //Atributo PIBperCapita
         printf ("PIBperCapita carta 1: %f\n", PIBperCapita);
         printf ("PIBperCapita carta 2: %f\n", PIBperCapita2);
-        if (PIBperCapita > PIBperCapita2) {
-            printf ("A carta 1 venceu!");
-        }else if (PIBperCapita < PIBperCapita2) {
-            printf ("A carta 2 venceu!");
-        }else {
-            printf ("Empate!");
-        }
+        
+        primeiroAtributo = (PIBperCapita > PIBperCapita2) ? 1 : 0;
+        
         break;
 
     case 7:
@@ -241,13 +216,9 @@ int main() {
         //Atributo super poder
         printf ("Super poder carta 1: %f\n", superpoder);
         printf ("Super poder carta 2: %f\n", superpoder2);
-        if (superpoder > superpoder2) {
-            printf ("A carta 1 venceu!");
-        }else if (superpoder < superpoder2) {
-            printf ("A carta 2 venceu!");
-        }else {
-            printf ("Empate!");
-        }
+        
+        primeiroAtributo = (superpoder > superpoder2) ? 1 : 0;
+
         break;
 
 
@@ -257,22 +228,108 @@ int main() {
         break;
     }
 
-
-
-
-
-
-
-
-
+    //Menu para escolha do segundo atributo
     
+    printf ("Agora escolha o segundo atributo com o qual você quer competir:");
+    printf ("1- População\n 2- Pontos turísticos\n3-PIB\n4- Área\n5- Densidade populacional\n6- Pib per Capita\n7- Super poder\n");
+
+    int segundoAtributo;
+
+    scanf ("%d", segundoAtributo);
+    
+    if (segundoAtributo == primeiroAtributo) {
+        printf ("Você não pode escolher o mesmo atributo. Por favor, selecione uma opção diferente para prosseguir.");
+    }else {
+        switch (segundoAtributo)
+    {
+    case 1:
+        
+        //Atributo população
+        printf ("Resultado:\n");
+
+        printf ("População carta 1: %lu\n", populacao);
+        printf ("População carta 2: %lu\n", populacao2);
+        
+        primeiroAtributo = (populacao > populacao2) ? 1 : 0;
+        
+        break;
+
+    case 2:
+    
+        //Atributo área
+        printf ("Área carta 1: %f\n", area);
+        printf ("Área carta 2: %f\n", area2);
+        
+        primeiroAtributo = (area > area2) ? 1 : 0;
+        
+        break;
+
+    case 3:
+    
+        //Atributo PIB
+        printf ("PIB carta 1: %f\n", PIB);
+        printf ("PIB carta 2: %f\n", PIB2);
+        
+        primeiroAtributo = (PIB > PIB2) ? 1 : 0;
+        
+        break;
+
+    case 4:
+    
+        //Atributo pontos turísticos
+        printf ("Pontos turísticos carta 1: %d\n", pontos_turisticos);
+        printf ("Pontos turísticos carta 2: %d\n", pontos_turisticos2);
+        
+        primeiroAtributo = (pontos_turisticos > pontos_turisticos2) ? 1 : 0;
+
+    case 5:
+    
+        //Atributo densidade populacional
+        printf ("Densidade populacional carta 1: %f\n", densidade_populacional);
+        printf ("Densidade populacional carta 2: %f\n", densidade_populacional2);
+        
+        primeiroAtributo = (densidade_populacional < densidade_populacional2) ? 1 : 0;
+        
+        break;
+
+    case 6:
+    
+        //Atributo PIBperCapita
+        printf ("PIBperCapita carta 1: %f\n", PIBperCapita);
+        printf ("PIBperCapita carta 2: %f\n", PIBperCapita2);
+        
+        primeiroAtributo = (PIBperCapita > PIBperCapita2) ? 1 : 0;
+        
+        break;
+
+    case 7:
+    
+        //Atributo super poder
+        printf ("Super poder carta 1: %f\n", superpoder);
+        printf ("Super poder carta 2: %f\n", superpoder2);
+        
+        primeiroAtributo = (superpoder > superpoder2) ? 1 : 0;
+
+        break;
 
 
 
+    default: 
+        printf ("Opção inválida.");
+        break;
+    }
+    }
+
+
+    if (primeiroAtributo == 1 && segundoAtributo == 1) {
+        printf ("Carta 1 venceu!");
+    }else if (primeiroAtributo == 0 && segundoAtributo == 0) {
+        printf ("Carta 2 venceu!");
+    }else {
+        printf ("Empate!");
+    }
 
 
 
     return 0;
 }
-
-
