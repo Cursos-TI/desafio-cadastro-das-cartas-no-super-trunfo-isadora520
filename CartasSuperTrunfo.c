@@ -138,11 +138,11 @@ int main() {
 
     //Comparação de cartas
 
-    printf ("Agora vamos comparar os atributos escolhidos e descobrir quem será o vencedor!");
+    printf ("Agora vamos comparar os atributos escolhidos e descobrir quem será o vencedor!\n");
 
     //Menu para escolha do primeiro atributo
 
-    printf ("Escolha o primeiro atributo com o qual você quer competir:");
+    printf ("Escolha o primeiro atributo com o qual você quer competir:\n");
     printf ("1- População\n 2- Pontos turísticos\n3-PIB\n4- Área\n5- Densidade populacional\n6- Pib per Capita\n7- Super poder\n");
     
     int primeiroAtributo; 
@@ -230,12 +230,12 @@ int main() {
 
     //Menu para escolha do segundo atributo
     
-    printf ("Agora escolha o segundo atributo com o qual você quer competir:");
+    printf ("Agora escolha o segundo atributo com o qual você quer competir:\n");
     printf ("1- População\n 2- Pontos turísticos\n3-PIB\n4- Área\n5- Densidade populacional\n6- Pib per Capita\n7- Super poder\n");
 
     int segundoAtributo;
 
-    scanf ("%d", segundoAtributo);
+    scanf ("%d", &segundoAtributo);
     
     if (segundoAtributo == primeiroAtributo) {
         printf ("Você não pode escolher o mesmo atributo. Por favor, selecione uma opção diferente para prosseguir.");
